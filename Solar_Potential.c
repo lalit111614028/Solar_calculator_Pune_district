@@ -4,18 +4,18 @@ int main()
 {
    float temp,Elev, RH, Dust, GHI, HS, Aspct;
    float a, b, c, d, e, f, g, z, m,n;
-   int ans, bns;
+  // int ans, bns;
    char x = 3;
    float y;
    /* These are efficiency parameters Temprature, Elevation,
 Realative Humidity, Dust, Global Horizontal Irradiance, Hillshade,
 Aspect respectively.
 */
-   printf("Welcome to solar potential calculator\n");
+   printf("Welcome to solar potential calculator\n Please press Enter to initiate the process.\n ");
 
    scanf("%c", &a);
 
-   printf("To get the solar potential of your location, input the following data.\n ");
+   printf("To get the solar potential of your location, input the following data.\n Please press Enter!\n ");
 
    scanf("%c", &a);
 
@@ -23,7 +23,7 @@ Aspect respectively.
 
  do
    {
-      printf("Enter the Tempereature in degree celsius.\n");
+      printf("Enter the Tempereature in degree celsius.\n Range 14 to 41. \n  ");
    scanf("%f", &temp);
       if (14 > temp || temp > 41)
       {
@@ -37,7 +37,7 @@ Aspect respectively.
    // ELEVATION
    do
    {
-      printf("Enter the Elevation in meters.\n");
+      printf("Enter the Elevation in meters.\n  Range 10 to 1410.\n");
       scanf("%f", &Elev);
       if (10 > Elev || Elev > 1410)
       {
@@ -50,7 +50,7 @@ Aspect respectively.
 
    do
    {
-      printf("Enter the Realative Humidity.\n");
+      printf("Enter the Realative Humidity.\n Range 0 to 100. \n");
 
       scanf("%f", &RH);
       if (0 > RH || RH > 100)
@@ -77,7 +77,7 @@ Aspect respectively.
   
     do
    {
-    printf("Enter the Global horizontal Irradiance.\n");
+    printf("Enter the Global horizontal Irradiance.\n Range 1211 to 1989.\n");
    scanf("%f", &GHI);
       if (1211 > GHI || GHI > 1989)
       {
@@ -90,7 +90,7 @@ Aspect respectively.
 
   do
    {
-    printf("Enter the hillshade.\n");
+    printf("Enter the hillshade.\n Range 0 to 255. \n");
    scanf("%f", &HS);
       if (0 > HS || HS > 255)
       {
@@ -104,7 +104,7 @@ Aspect respectively.
    
    do
    {
-     printf("Enter the Aspect angle.\n");
+     printf("Enter the Aspect angle.\n Range 0 to 360.\n");
    scanf("%f", &Aspct);
       if (0 > Aspct || Aspct > 360)
       {
@@ -153,7 +153,7 @@ Aspect respectively.
    
    n = ((m+99)/(177+99))*100;
 
-   printf("The solar potential at your location is %f\n", n);
+   printf("The solar potential at your location is %f %%\n" , n);
 
      scanf("%c", &a);
  scanf("%c", &a);
